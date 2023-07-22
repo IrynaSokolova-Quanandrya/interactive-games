@@ -1,0 +1,28 @@
+{
+	"name": "interactive-games",
+	"version": "1.0.0",
+	"description": "",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"homepage": "https://IrynaSokolova-Quanandrya.github.io/interactive-games",
+	"source": "src/index.html",
+	"scripts": {
+		"start": "parcel",
+		"build": "parcel build --public-url /interactive-games/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IrynaSokolova-Quanandrya/interactive-games.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/IrynaSokolova-Quanandrya/interactive-games/issues"
+	},
+	"devDependencies": {
+		"parcel": "^2.9.3"
+	},
+	"dependencies": {
+		"validator": "^13.9.0"
+	}
+}
