@@ -689,7 +689,9 @@ function switchCardFunction(event) {
     const text = Array.from(document.querySelectorAll(`.scientist-text`));
     text.forEach((item) => item.style.display = "none")
     item.style.animationName = "showImages";
-    item.style.backgroundImage = `url(${imagesArr[index]})`;
+let imgSrc = new URL(imagesArr[index], import.meta.url);
+console.log(imgSrc);
+    item.style.backgroundImage = `url(${imgSrc})`;//new URL(`${imagesArr[index]}`, import.meta.url)
     item.style.cursor = "pointer";
     if (btnIndex === 1 || btnIndex === 2) {
       item.addEventListener("click", functions.putCardOnListFunction);
